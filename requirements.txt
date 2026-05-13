@@ -1,0 +1,8 @@
+# Framework principal
+robotframework
+
+# Biblioteca para automação web com Selenium
+robotframework-seleniumlibrary
+
+# Gerencia automaticamente o driver do navegador
+webdriver-manager
