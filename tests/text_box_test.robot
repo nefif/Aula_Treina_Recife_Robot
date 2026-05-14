@@ -21,3 +21,10 @@ Caso de Teste 2 - Não preencher nenhum campo
     Quando o usuário não preencher nenhum campo
     E clicar no botão Submeter
     Então o sistema não deve exibir nenhum dado na seção de Resultado
+
+Caso de Teste 3 - Preencher apenas o campo de Email
+    [Tags]    Smoke
+    Dado que o usuário esteja na página de Text Box
+    Quando o usuário preencher apenas o campo de Email
+    E clicar no botão Submeter
+    Então o sistema deve exibir apenas o email preenchido na seção de Resultado

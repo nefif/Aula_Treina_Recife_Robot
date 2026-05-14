@@ -39,6 +39,10 @@ Então o sistema deve exibir os dados preenchidos na seção de Resultado
     Element Should Contain   ${RESULTADO}   ${end_fixo}
     Capture Page Screenshot
 
+Quando o usuário preencher apenas o campo de Email
+    Input Text    ${EMAIL}            ${txt_email}
+    Capture Page Screenshot
+
 Quando o usuário não preencher nenhum campo
     Click Button    ${BTN_SUBMETER}
     Capture Page Screenshot
@@ -46,4 +50,7 @@ Quando o usuário não preencher nenhum campo
 Então o sistema não deve exibir nenhum dado na seção de Resultado
     Page Should Not Contain Element    ${RESULTADO_NOME}
     Capture Page Screenshot
+
+Então o sistema deve exibir apenas o email preenchido na seção de Resultado
+    Page Should Contain Element    ${RESULTADO}    ${txt_email}  
 
