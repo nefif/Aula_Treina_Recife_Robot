@@ -26,8 +26,8 @@ O projeto está organizado da seguinte forma:
 
 2. Execute todos os testes:
     ```bash
-    robot -d results tests/
+    robot -d repors tests/
 
 3. Executar apenas teste com tag especifica
     ```bash
-    robot -d results -i Tag tests/
+    robot -d repors -i Tag tests/
